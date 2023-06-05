@@ -1,17 +1,19 @@
 import styled from "styled-components";
-import works from "../../img/works.jpg";
+interface IUrlImg {
+    works: string;
+}
 
 export const Container = styled.section`
     height: calc(100vh - 180px);
     max-width: 100vw;
 `;
 
-export const Content = styled.div`
+export const Content = styled.div<IUrlImg>`
     position: relative;
     overflow: hidden;
     height: 100%;
     max-width: 100%;
-    background-image: url(${works});
+    background-image: url(${({ works }) => works});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
