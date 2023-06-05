@@ -12,9 +12,15 @@ export const GlobalStyle = createGlobalStyle`
   font-weight: 500;
   text-decoration-line: none;
 }
+
 html{
-font-size:62.5%;
-}  
+    font-size:62.5%;
+    scroll-behavior:smooth;
+}
+body{
+    scroll-behavior:smooth;
+    background-color: white;
+}
 img{
   max-width: 100%;
   display: block;
