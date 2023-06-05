@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Content, Info, Waves } from "./styles";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import works from "../../img/works.jpg";
 export function AboutMe() {
     return (
         <Container>
-            <Content>
+            <Content works={works}>
                 <Info>
                     <div>
                         <span>Construções e Reformas</span>
